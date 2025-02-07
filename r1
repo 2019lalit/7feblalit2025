@@ -1,0 +1,57 @@
+//please find out largest of given number is   input 11238        output:- 8 
+#include <iostream>
+using namespace std;
+
+int lalit(int n) {
+    int rem;
+    while (n > 0) {
+        int largest=0;
+        rem =  n % 10; 
+         n = n/10; 
+        if(rem>largest){
+            largest=rem;
+        }
+        return rem;     
+    }
+    return 0;
+}
+
+int main() {
+    int n;
+    cout<<"please enter the number"<<endl;
+    cin>>n;
+    
+    cout << "largest of given number is: " << lalit(n) << endl;
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------
+//please find out min of given number is   input 11238        output:- 1
+#include <iostream>
+using namespace std;
+
+int lalit(int n) {
+    int rem; int minimum=9;
+    while (n > 0) {
+         minimum=9;
+        rem =  n % 10; 
+         
+        if(rem<minimum){
+            minimum=rem;
+        }
+       n=n/10;    
+    }
+    return minimum;
+}
+
+int main() {
+    int n;
+    cout<<"please enter the number"<<endl;
+    cin>>n;
+    
+    cout << "min of given number is: " << lalit(n) << endl;
+    return 0;
+}
+
+
+
+
